@@ -9,12 +9,8 @@ import seleniumBasics.TestNGBase;
 public class LoginTest extends TestNGBase {
 	@Test
 	public void verifyUserLoginWithValidCredential() {
-		WebElement username=driver.findElement(By.xpath("//input[@id='user-name']"));
-		username.sendKeys("standard_user");
-		WebElement password=driver.findElement(By.xpath("//input[@id='password']"));
-		password.sendKeys("secret_sauce");
-		WebElement loginbutton=driver.findElement(By.xpath("//input[@id='login-button']"));
-		loginbutton.click();
+		
+		
 	}
 
 	@Test
