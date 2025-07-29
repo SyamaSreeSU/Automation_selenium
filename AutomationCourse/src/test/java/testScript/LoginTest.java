@@ -4,13 +4,17 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
+import pages.LoginPage;
 import seleniumBasics.TestNGBase;
 
 public class LoginTest extends TestNGBase {
 	@Test
 	public void verifyUserLoginWithValidCredential() {
 		
-		
+		LoginPage loginpage=new LoginPage(driver);
+		loginpage.enterUserNameOnUserNameField();
+		loginpage.enterPasswordOnPasswordField();
+		loginpage.clickOnSignInButton();
 	}
 
 	@Test
